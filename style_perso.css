@@ -1,0 +1,42 @@
+/* feuille de style pour le site phase 2 */
+body {
+    background-color: #f4eec0;
+}
+header {
+    background-color: #a6e4e7;
+    text-align: center;
+  
+    
+}
+nav {
+    background-color: cornflowerblue;
+}
+
+nav a {
+    border: solid white 1px ;
+    border-radius: 200px ;
+}
+
+header h1{
+    
+    text-transform: uppercase;
+    color: blue;
+} 
+
+section {
+    background-color: #849561;
+    height: 100px;
+    align-items: center;
+    border: 1px black solid;
+}
+
+div{
+    background-color: blue;
+    border: 1px black solid;
+}
+
+footer {
+    background-color: cornflowerblue;
+
+    border: 1px black solid;
+}
