@@ -1,7 +1,18 @@
 /* feuille de style du site phase 2 webforce 3  */
+/* goole font utilisés dans le style : oswald, lemonada, anton  */
+
+/* 
+font-family: 'Oswald', sans-serif;
+
+font-family: 'Lemonada', cursive;
+
+font-family: 'Anton', sans-serif; */
+
+
 body {
     background-image: url(../img/concrete-texture.png);
 }
+/* *******************************************************TITRES TEXTES ECT********************************************************/
 
 h1 {
     font-family: 'Anton', sans-serif;
@@ -11,12 +22,42 @@ h1 {
     letter-spacing: 1px;
 }
 
-/* HEADER INDEX  */
+h2 {
+    font-size: 35px;
+    color: #2c3e50;
+    /* padding: 15px; */
+    font-weight: bold ;
+    /* ombre portée sur le lettrage  */
+    text-shadow: 1px 1px 2 px #aaa;
+}
+
+h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    font-weight: bold ;
+    /* ombre portée sur le lettrage  */
+    text-shadow: 1px 1px 2 px #aaa;
+}
+
+h4{
+   text-align: center;
+   margin-top: 30px;
+}
+
+
+
+blockquote {
+    font-size: 120%;
+    font-style: italic;
+}
+
+
+
+/******************************************************************* HEADER INDEX  ********************************************************/
 header {
     background-color: #2c3e50;
     height: 175px;
 }
-
 #logo {
     background-color: #2c3e50;
     width: 25%;
@@ -37,7 +78,128 @@ header {
     width: 25%;
     float: left;
 }
+/********************************************************************** DEBUT NAV*************************************************************************/
 
+nav {
+    background: #2980b9;
+    height: 70px;
+    padding: 15px;
+    border-bottom: 8px solid #6acafc;
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    padding: 2px 10 px;
+    border-radius: 10px 0px #fff;
+    background: #6acafc;
+
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.5s;
+
+}
+ 
+nav a:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+.active {
+    background: #2c3e50;
+    color: #fff;
+}
+
+/***************************************ZONING INDEX******************************************************************/
+main {
+    background: rgba(178, 178, 178, 0.30);
+    margin: 0 auto;
+    width: 1200px;
+    
+}
+
+aside {
+    height: 250px;
+    background: #a6d6c3;
+}
+
+section {
+    background: #daf7a6;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+footer {
+    background: #2980b9;
+    height: 30px;
+}
+
+/******************************************************************LA PAGE ZONING*******************************************************/
+ 
+/* le zoning 1  */
+#zoning1 {
+    background: #ffd6d6;
+    border: 1px solid white;
+    width: 798px;
+    margin: auto;
+    text-align: center;
+}
+#zoning1 header{
+    background-color:#f7f39a ;
+    height: 70px;
+
+}
+
+#zoning1 aside {
+    background-color:#10828c ;
+    height: 525px;
+    float: left;
+    width: 20%;
+    color: white;
+
+}
+
+#zoning1 section {
+    height: 525px;
+    width: 80%;
+    background-color: #38817a;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*le zoning 2*/
+#zoning2 {
+    background: #ffd6d6;
+    border: 1px solid white;
+    width: 798px;
+    margin: auto;
+    text-align: center;
+}
+#zoning2 header {
+    background-color: teal;
+    height: 70px;
+}
+
+#zoning2 aside {
+    background-color: tomato;
+    height: 500px;
+    width: 20%;
+    float: left;
+}
+.milieu {
+    background-color: thistle;
+    width: 60%;
+    float: left;
+    height: 500px;
+}
+
+/***************************************************************** FLOAT**********************************************************************************/
 .clear {
     clear: both;
 }
+
+
