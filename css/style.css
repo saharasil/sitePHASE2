@@ -1,4 +1,58 @@
 /* feuille de style du site phase 2 webforce 3  */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing */
+
+* {
+    
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 /* goole font utilisés dans le style : oswald, lemonada, anton  */
 
 /* 
@@ -78,6 +132,11 @@ header {
     width: 25%;
     float: left;
 }
+.haut {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
 /********************************************************************** DEBUT NAV*************************************************************************/
 
 nav {
@@ -125,7 +184,7 @@ aside {
     background: #a6d6c3;
 }
 
-section {
+body section {
     background: #daf7a6;
     margin-top: 50px;
     padding: 20px;
@@ -196,10 +255,265 @@ footer {
     float: left;
     height: 500px;
 }
+/* Le zoning 3  */
+
+#zoning3 {
+    background: #ffd6d6;
+    border: 1px solid white;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#zoning3 section {
+    height: 525px;
+    width: 50%;
+    /* border: 1px solid black; */
+    background-color: #38817a;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#zoning3 footer {
+    height: 70px;
+    float: left;
+    width: 100%;
+}
+
+/* Le zoning 4  */
+
+#zoning4 {
+    background: #ffd6d6;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    border: red dotted 20px;
+}
+
+#zoning4 header {
+    height: 100px;
+    background: #10828c;
+}
+
+#zoning4 nav {
+    height: 50px;
+    background: #bed4e2;
+    border: none;
+
+}
+
+#zoning4 section {
+    height: 200px;
+    background: red;
+}
+
+#zoning4 footer {
+    height: 100px;
+    background: #6acaf6;
+}
+
+
+
+
+
+/* Le zoning 5  */
+#zoning5 {
+    background: #ffd6d6;
+    text-align: center;
+    margin: 0 auto;
+ 
+}
+
+#zoning5 header {
+    height: 50px;
+    background: #F8D771;
+}
+
+#zoning5 nav {
+    height: 50px;
+    background: #bed4e2;
+    border: none;
+
+}
+
+#zoning5 section {
+    width: 100%;
+    height: 200px;
+}
+
+#zoning5 .section {
+    padding: 0;
+}
+
+
+#zoning5 section  .z1, .z2, .z3, .z4 {
+    float: left;
+    text-align: center;
+    border: solid 1px black;
+    width: 50%;
+    height: 250px;
+}
+
+#zoning5 .z1, .z4 {
+    background-color: #F8D771;
+}
+
+#zoning5 .z2, .z3 {
+    background-color: #fce38a;
+}
+
+#zoning5 section {
+    height: 500px;
+    background: #10828c ;
+    
+}
+
+#zoning5 footer {
+    height: 100px;
+    background: #6acaf6;
+}
+
+/* Le zoning 6  */
+
+#zoning6 {
+    width: 800px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+#zoning6 header {
+    background: #40a497;
+    height: 180px;
+}
+.haut1 {
+    background: #203562;
+    float: left;
+    width: 25%;
+    height: 100%;
+
+
+}
+
+.haut2 {
+    background: #3e588f;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.haut3 {
+    background: #203562;
+    float: left;
+    width: 25%;
+    height: 100%;
+
+}
+
+#zoning6 nav {
+    background: #085269;
+    height: 80px;
+    border: none;
+}
+
+#zoning6 aside{
+    background: #446878;
+    float: left;
+    width: 25%;
+    height: 650px;
+}
+
+#zoning6 section {
+    float: left;
+    width: 75%;
+    margin: 0;
+    padding: 0;
+    height: 250px;
+}
+
+.slideshow {
+    background: #314a52;
+    height: 250px;
+}
+#zoning6 .a{
+    background: #c0c5cd;
+    float: left;
+    width: 50%;
+    height: 250px;
+}
+#zoning6 .b{
+    background: #203562;
+    float: left;
+    width: 50%;
+    height: 250px;
+}
+#zoning6 .c{
+    background: #c0c5cd;
+    width: 25%;
+    float: left;
+    height: 150px;
+}
+#zoning6 .e{
+    background: #c0c5cd;
+    width: 25%;
+    float: left;
+    height: 150px;
+}
+#zoning6 .d{
+    background: #203562;
+    width: 25%;
+    float: left;
+    height: 150px;
+}
+#zoning6 .f{
+    background: #203562;
+    width: 25%;
+    float: left;
+    height: 150px;
+}
+#zoning6 footer {
+    background: #0B5269;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /***************************************************************** FLOAT**********************************************************************************/
 .clear {
     clear: both;
 }
-
-
