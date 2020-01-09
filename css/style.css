@@ -65,6 +65,11 @@ header {
     text-align: center;
     
 }
+.bouton {
+    position: fixed;
+    bottom: 170px;
+    right: 170px;
+}
 
 #slogan {
     background-color: #2c3e50;
