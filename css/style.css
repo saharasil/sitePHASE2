@@ -117,8 +117,13 @@ header {
     width: 25%;
     float: left;
     text-align: center;
+    padding: 15px;
     
 }
+
+/* img [src="../img/logo.png"] {
+    padding: 10px;
+} */
 
 #slogan {
     background-color: #2c3e50;
@@ -150,7 +155,8 @@ nav {
 nav a {
     margin: 10px;
     padding: 2px 10 px;
-    border-radius: 10px 0px #fff;
+    border-radius: 10px 0px ;
+    border: 2px solid #eee;
     background: #6acafc;
 
     font-family: 'Oswald', sans-serif;
@@ -421,7 +427,7 @@ footer {
     background: #446878;
     float: left;
     width: 25%;
-    height: 650px;
+    height: 750px;
 }
 
 #zoning6 section {
@@ -434,7 +440,7 @@ footer {
 
 .slideshow {
     background: #314a52;
-    height: 250px;
+    height: 200px;
 }
 #zoning6 .a{
     background: #c0c5cd;
@@ -452,68 +458,117 @@ footer {
     background: #c0c5cd;
     width: 25%;
     float: left;
-    height: 150px;
+    height: 250px;
 }
 #zoning6 .e{
     background: #c0c5cd;
     width: 25%;
     float: left;
-    height: 150px;
+    height: 250px;
 }
 #zoning6 .d{
     background: #203562;
     width: 25%;
     float: left;
-    height: 150px;
+    height: 250px;
 }
 #zoning6 .f{
     background: #203562;
     width: 25%;
     float: left;
-    height: 150px;
+    height: 250px;
 }
 #zoning6 footer {
     background: #0B5269;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#zoning6 .foot {
+    background: #0b5269;
+}
 
 
 /***************************************************************** FLOAT**********************************************************************************/
 .clear {
     clear: both;
+}
+
+/*****************************************LA PAGE TEXTE*********************************************************/
+.oswald p {
+    font-family: 'Oswald', sans-serif;
+}
+
+/*********************************************LA PAGE SELECTEUR*************************************************/
+.select p {
+    color: red;
+}
+.select p:first-of-type {
+    color: pink;
+}
+.select p:last-of-type {
+    color: pink;
+}
+.select p:nth-of-type(5), .select p:nth-of-type(6) {
+    color:black;
+}
+.select div:not(.zoneB) {
+    font-weight: bold;
+}
+.select .zoneA {
+    color: #f56f56;
+}
+.select .zoneB {
+    color: #996633;
+}
+.select .zoneB .couleurBleu {
+    color: blue;
+    font-size: 16px;
+}
+.select #zoneC {
+    color: #98f32f;
+}
+.select #zoneD span {
+    color: #32ff32;
+    font-size: 30px;
+    font-style: italic;
+}
+
+/*********************************************LA PAGE SELECTEUR*************************************************/
+
+.imageFond {
+    background: url(../img/fond.jpg) no-repeat;
+    background-size: cover;
+    /* https://developer.mozilla.org/fr/docs/Web/CSS/background-size  */
+}
+
+.imageFond p{
+    width: 75%;
+    margin: 100px auto 200px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.60);
+    font-size: 120%;
+    border-radius: 10px;
+
+}
+
+/* on pointe cette umage spécifique  */
+img[src="../img/toureiffel.jpg"] {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+/* animations sur les images  */
+.image {
+    margin: 20px;
+    border: 5px solid #eee;
+    box-shadow: 4px 4px 4px rgba(71, 35, 20, 0.877) ;
+    transition: 1s;
+}
+
+.image:hover {
+    transform: rotate(-7deg);
+    border: 15px solid #eee;
+}
+
+.rotation360:hover {
+    transform: rotate(-360deg)
 }

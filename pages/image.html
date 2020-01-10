@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Site Phase 2 // Accueil</title>
+    <title>Site Phase 2 // Image</title>
     <!-- lien vers les typos en CDN  -->
-    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald&display=swap" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald&display=swap" rel="stylesheet">  -->
     <!-- lien vers le kit font awesome  -->
-    <script src="https://kit.fontawesome.com/94a46f98c4.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/94a46f98c4.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -21,9 +21,9 @@
         <div id="logo"> <!-- ancre du haut de la page  -->
 
             <a href="#logo"><!-- lien sur un bouton pour remonter en haut de la page le bouton sera afficheé en bas de page (évidement) grâce au css  -->
-            <button type="button"><i class="fas fa-arrow-alt-circle-up"></i> </button></i></a> 
+            <button type="button" class="haut"><i class="fas fa-arrow-alt-circle-up"></i> </button></a> 
 
-            <img src="img/logo.png" alt="Mon premier site HTML CSS">
+            <img src="../img/logo.png" alt="Mon premier site HTML CSS">
         </div>
         <!-- la div pour le titre de site  -->
         <div id="slogan"><h1>Mon premier site en HTML & CSS</h1></div>
@@ -56,8 +56,26 @@
     </nav>
         <!-- contenu principale -->
     <main>
+       <h2>Les images </h2>
+       <section class="imageFond">
+           <h3>Images de fond en CSS</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti architecto quis ipsum nam minus soluta illum repudiandae dolores suscipit tenetur ut facilis maxime optio, laudantium aliquam ad fuga veniam totam? Lorem ipsum, Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus pariatur consequuntur ducimus commodi, eos natus aliquid eius quo voluptatum culpa nihil nobis porro, consequatur dolorum perspiciatis quia quis, dolore iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, adipisci recusandae voluptas voluptatem sit eaque doloribus aspernatur excepturi dolor quasi labore cumque laboriosam placeat voluptatibus et quidem minus molestiae sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptatibus. Adipisci reiciendis rem unde, sit quisquam ab exercitationem aliquid eveniet omnis delectus voluptas provident neque dignissimos odio laboriosam fugit! Incidunt!</p>
+        </section>
        
+       <section>
+            <h3>Image de fond en HTML</h3>
+            <img src="../img/toureiffel.jpg" alt="tour Eiffel à paris" title="tour Eiffel à paris">
+        </section>
+      
+       <section class=" rotationImg"> 
+           <h3>Image en HTML et en CSS</h3>
+           <img src="../img/image.jpg" alt="le Golden Gate Bridge" class="image">
+           <img src="../img/image.jpg" alt="le Golden Gate Bridge" class="image">
+           <img src="../img/image.jpg" alt="le Golden Gate Bridge" class="  image rotation360 ">
+        </section>
+
     </main>
+    
         <!-- pied de page  -->
     <footer>
         <i class="fas fa-shoe-prints"></i>
