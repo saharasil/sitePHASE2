@@ -23,7 +23,7 @@
             <a href="#logo"><!-- lien sur un bouton pour remonter en haut de la page le bouton sera afficheé en bas de page (évidement) grâce au css  -->
             <button type="button" class="haut"><i class="fas fa-arrow-alt-circle-up"></i> </button></i></a> 
 
-            <img src="img/logo.png" alt="Mon premier site HTML CSS">
+            <img src="../img/logo.png" alt="Mon premier site HTML CSS">
         </div>
         <!-- la div pour le titre de site  -->
         <div id="slogan"><h1>Mon premier site en HTML & CSS</h1></div>
@@ -54,6 +54,64 @@
         <a href="multimedia.html" title="Site Phase 2// La multimedia" >Multemidia</a>
         <a href="animation.html" title="Site Phase 2// Les animation">Animation</a>
     </nav>
+    <main>
+        <!-- contenu principale -->
+        <h2>Formulaire</h2>
+        <section class="formulaire">
+            <!-- action : manière de circulation des données -->
+            <!-- action : url de destination, le fichier php qui va servir à traiter les données  -->
+            <!-- enctype : permet d'envoyer un fichier correctement, l'encodage du formulaire  -->
+            <form action="url_de_destination.php" method="post" enctype="multipart/form-data">
+            
+                    <label for="pseudo">Pseudo*</label>
+                    <input type="text" name="pseudo" id="pseudo" placeholder="entrez votre pseudo" required><br>
+
+                    <label for="prenom">Prénom*</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="entrez votre prenom" required><br>
+
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="mdp" id="mdp"><br>
+
+                    <label for="email" >Email*</label>
+                    <input  type="email" name="email" id="email" placeholder="Votre email" required><br>
+
+                    <label for="cv">Votre CV</label>
+                    <input type="file" name="cv" id="cv"><br>
+
+
+                    <p>Quel sont vos fruits préférés ?</p>
+                    
+                    <input type="checkbox" id="orange" value="orange" checked>
+                    <label for="orange">Orange</label>
+
+                    
+                    <input type="checkbox" id="fraise" value="fraise">
+                    <label for="fraise">Fraise</label>
+
+                    
+                    <input type="checkbox" id="poire" value="poire">
+                    <label for="poire">Poire</label><br>
+
+                    <label for="cp">Code postal</label>
+                    <input type="text" id="cp" name="cp" maxlength="5" pattern="[0-9]{5}" title="5 chiffres entre 0 et 9"><br>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" cols="25"></textarea><br>
+
+                    <input type="submit" name="envoyer" value="Envoyer">        
+                    <input type="reset" name="annuler" value="Annuler">           
+
+                </form>
+
+
+        </section>
+
+
+
+
+
+
+    </main>
         
 </body>
 </html>

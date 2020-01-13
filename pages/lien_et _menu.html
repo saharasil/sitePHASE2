@@ -21,9 +21,9 @@
         <div id="logo"> <!-- ancre du haut de la page  -->
 
             <a href="#logo"><!-- lien sur un bouton pour remonter en haut de la page le bouton sera afficheé en bas de page (évidement) grâce au css  -->
-            <button type="button"><i class="fas fa-arrow-alt-circle-up"></i> </button></i></a> 
+            <button type="button" class="haut"><i class="fas fa-arrow-alt-circle-up"></i> </button></i></a> 
 
-            <img src="img/logo.png" alt="Mon premier site HTML CSS">
+            <img src="../img/logo.png" alt="Mon premier site HTML CSS">
         </div>
         <!-- la div pour le titre de site  -->
         <div id="slogan"><h1>Mon premier site en HTML & CSS</h1></div>
@@ -54,3 +54,91 @@
         <a href="multimedia.html" title="Site Phase 2// La multimedia" >Multemidia</a>
         <a href="animation.html" title="Site Phase 2// Les animation">Animation</a>
     </nav>
+    <main>
+        <h2>Liens et menus</h2>
+        <div class="ancre">
+            <a href="#lien">Les liens</a>
+            <a href="#menu">Menu ou Navigation</a>
+            <a href="#menuDeroulant">Menu déroulant</a>
+        </div>
+
+        <section id="lien">
+            <h3>Les liens</h3>
+            <!--Dans le lien nous aurons aussi (title="xxx") pour ouvrir fenêtre d'info au passage de la souris sur le lien et (target="_blank") pour envoyer sur un autre onglet"-->
+            <a href="https://codepen.io" title="Se rendre sur le site de CodePen" target="_blank">CodePen</a> is a social development environment for front-end designers and developers.<br>
+            <a href="http://www.google.fr" target="_blank">Google</a> le moteur de recherche.<br>
+            <a href="../fichiers/pantin_planning - pantin 19-20v060120.pdf">Télécharger le planing</a><br>
+            <!-- On peut ajouter juste un download dans le lien pour rendre téléchargeable le fichier -->
+            <a href="../fichiers/pantin_planning - pantin 19-20v060120.pdf" target="_blank">Voir le planing</a><br>
+            <!-- Pour imprimer ma page -->
+            <a href="#" onclick="window.print()">Imprimer la page</a><br>
+            <!--Pour rendre cliquable une image et renvoyer sur le lien inséré dessus-->
+            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.ico" alt="ici icône Facebook"></a><br>
+            <!-- Inséré le lien juste dans " ici " qui renvoi sur une autre page de mon site -->
+            Cliquer <a href="../index.html">ici</a> pour vous rendre sur la page d'accueil.
+        </section>
+
+        <section id="menu">
+            <h3>Un menu</h3>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Parcours</a></li>
+                    <li><a href="#">Realisation</a></li>
+                    <li><a href="#"> Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="menuDeroulant">
+            <h3>Un menu déroulant</h3>
+
+
+                <nav>
+                    <ul class="niveau1">
+                        <li><a href="#">Accueil</a></li>
+                        
+                        <li class="sousMenu"><a href="#">Formation</a>
+                            <ul class="">
+                                <li><a href="#">Etudiants</a></li>
+                                <li><a href="#">Emploi du temps</a></li>
+                                <li><a href="#">Recherche d'emploi</a></li>
+                                <li><a href="#">Documents</a></li>
+                            </ul>
+                        
+                        </li>
+                        <li><a href="#">Information</a></li>
+
+                        <li class="sousMenu"><a href="#">Cours</a>
+                        
+                            <ul class="niveau2">
+                                <li><a href="#">Internet</a></li>
+                                <li><a href="#">HTML CSS</a></li>
+                                <li><a href="#">CMS</a></li>
+                                <li><a href="#">Starts</a></li>
+                                <li><a href="#">Réseaux sociaux</a></li>
+                                <li><a href="#">Réferencement</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Cahier de charge</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                            </ul>
+                        
+                        </li>
+                        <li><a href="#">Mon CV</a></li>
+                    </ul>
+                </nav>
+
+
+
+        </section>
+
+
+
+
+
+    </main>
+    <footer>
+        <i class="fas fa-shoe-prints"></i>
+    </footer>
+    </body>
+    </html>
