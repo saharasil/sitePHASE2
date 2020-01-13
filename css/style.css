@@ -722,30 +722,82 @@ label[for="orange"], label[for="fraise"], label[for="poire"] {
     color: #f16529;
 }
 
+/* menu  */
+#menu nav {
+    background: transparent;
+    border: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
+#menu ul {
+        text-align: center;
+}
 
 #menu ul li {
     display: inline;
+    /* https://www.alsacreations.com/article/lire/1209-display-inline-block.html  */
 }
 
-.niveau1 li {
+#menu nav a {
+    padding: 10px;
+    color: grey;
+    background: #ddd;
+    /* ease-in  lent au début et accélère de plus en plus sur la fin  */
+    transition: 1s ease-in;
+}
+
+#menu nav a:hover {
+    color: #fff;
+    background: #069;
+}
+
+/* le menu déroulant  */
+#menuDeroulant {
+    height: 650px;
+}
+
+#menuDeroulant nav {
+    border: none;
+    background: transparent;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#menuDeroulant nav ul li {
+     float: left;
+     width: 20%;
+
+}
+
+#menuDeroulant ul ul {
+    display: none;
+}
+
+#menuDeroulant nav ul li ul li {
+    border-top: 1px solid #464646;
+    width: 100%;
+}
+
+
+#menuDeroulant nav li {
+    background: #ccc;
+}
+
+#menuDeroulant nav li a {
+    /* om met les a dans les li de toutes les ul en display block  */
+    display: block;
+    color: #000;
+    padding: 4px 0 4px;
+}
+
+#menuDeroulant ul {
+    text-align: center;
+}
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2 {
+    /* les ul qui sont de classe niveau 2 et qui sont dans un li de class souMenu sur lequel on a un hover, li qui se trouvent dans la ul de class niveau 1 sont display block  */
+    display: block;
+}
+/* .niveau1 li {
+    
     display: inline;
 } */
