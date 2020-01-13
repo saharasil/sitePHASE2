@@ -120,6 +120,11 @@ header {
     padding: 15px;
     
 }
+.bouton {
+    position: fixed;
+    bottom: 170px;
+    right: 170px;
+}
 
 /* img [src="../img/logo.png"] {
     padding: 10px;
