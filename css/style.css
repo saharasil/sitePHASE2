@@ -197,7 +197,7 @@ aside {
 }
 
 body section {
-    background: #daf7a6;
+    /* background: #daf7a6; */
     margin-top: 50px;
     padding: 20px;
 }
@@ -645,6 +645,10 @@ li .fa:hover {
     display: block;
 }
 
+.ordonnee li {
+    list-style: decimal;
+}
+
 
 .imbriquee li ul li:hover {
     font-size: 150%;
@@ -797,7 +801,55 @@ label[for="orange"], label[for="fraise"], label[for="poire"] {
     /* les ul qui sont de classe niveau 2 et qui sont dans un li de class souMenu sur lequel on a un hover, li qui se trouvent dans la ul de class niveau 1 sont display block  */
     display: block;
 }
-/* .niveau1 li {
+
+
+/*********************************************LA PAGE MULTIMEDIA*************************************************/
+
+.videoFond {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.videoFond video {
+    width: 100%;
+    position: absolute;
+    /* ordre d'emplacement position en bas  */
+    z-index: 1;
+}
+
+.videoTexte {
+    /* position relative au parent  */
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.videoFond p {
+    position: absolute;
+    left: 250px;
+    top: 150px;
+    /* z-index: 2 en position 2  */
+    z-index: 2;
+    width: 500px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.60);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 120%;
+}
+
+
+iframe[src="https://www.youtube.com/embed/Gcqu2V5lBZo"] {
+    width: 100%;
+    height: 700px;
+}
+
+.audio {
+    text-align: center;
+}
+
+.youtube {
+    padding: 100px;
     
-    display: inline;
-} */
+}
+

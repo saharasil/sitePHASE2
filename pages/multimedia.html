@@ -21,7 +21,7 @@
         <div id="logo"> <!-- ancre du haut de la page  -->
 
             <a href="#logo"><!-- lien sur un bouton pour remonter en haut de la page le bouton sera afficheé en bas de page (évidement) grâce au css  -->
-            <button type="button" class="haut"><i class="fas fa-arrow-alt-circle-up"></i> </button></i></a> 
+            <button type="button" class="haut"><i class="fas fa-arrow-alt-circle-up"></i> </button></a> 
 
             <img src="../img/logo.png" alt="Mon premier site HTML CSS">
         </div>
@@ -54,5 +54,40 @@
             <a href="multimedia.html" title="Site Phase 2// La multimedia" class="active" >Multemidia</a>
             <a href="animation.html" title="Site Phase 2// Les animation">Animation</a>
         </nav>
+        <main>
+
+            <h2>Multimédia</h2>
+            <section class="videoFond">
+                <h3>vidéo en fond</h3>
+                <div class="videoTexte">
+                    <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/video  -->
+                    <!-- balise video lancement automatique et en boucle  -->
+                    <video autoplay loop>
+                        <source src="../video/videoBackground.webm" type="video/webm">
+                        <source src="../video/videoBackground.mp4" type="video/mp4">
+                    </video>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur, velit omnis quis animi at facilis voluptatibus, accusantium ratione ad dolorem, ipsa fugit quia iusto quisquam laudantium recusandae. Illo, harum!</p>
+
+                </div>
+            </section>
+            <section class="youtube">
+                <h3>vidéo youtube</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Gcqu2V5lBZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+                
+
+            <section class="audio">
+                <h3>Audio</h3>
+                <h4>Format .mp3</h4>
+                <audio src="../audio/son.mp3" controls></audio>
+                <h4>Format .ogg</h4>
+                <audio src="../audio/son.ogg" controls></audio>
+            </section>
+
+            <section>
+                <h3>Google Maps</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.099566751721!2d2.3803412156928783!3d48.837239479285415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67215d9ea3303%3A0x56ae687ae93da4c4!2zQ2luw6ltYXRow6hxdWUgZnJhbsOnYWlzZQ!5e0!3m2!1sfr!2sfr!4v1578993247307!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </section>
+        </main>
 </body>
 </html>
