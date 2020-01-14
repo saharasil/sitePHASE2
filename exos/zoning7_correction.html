@@ -42,7 +42,7 @@
             }
             footer {
                 background: orange;
-                height: 60px;
+                height: 100px;
             }
             .grande_zone {
                 float: left;
@@ -57,6 +57,9 @@
                 /* c'est un peu de bricolage mais si on a que du texte dans nos div, on met en line-height la valeur de la hauteur de la div  */
                 line-height: 125px;
                 border: gray 2px solid;
+                /* si je dois utiliser box-sizing: border-box ; je le fais directement sur l'élément et je le fais si mes largeurs au hauteurs sont en % : c'est pour les bordures et le padding  */
+                /* si je dois le faire sur un élément avec hauteur et largeur en px je ne le fais qu'une seule fois sur la page  */
+                box-sizing: border-box;
             }
             .clear {
                 clear: both;
@@ -95,7 +98,13 @@
             </div>
         </section>
         <div class="clear"></div>
-        <footer><p>Zone du bas</p></footer>
+        <footer><a href="mailto:patrick.isola@lepoles.com">contacter-moi</a><br>
+            <p><a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"alt="CSS Valide !" /></a></p>
+                <p><a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !"/></a></p>
+                              
+        </footer>
     </div>
 </body>
 </html>
