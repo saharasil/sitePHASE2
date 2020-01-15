@@ -147,6 +147,11 @@ header {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    font-size: 350%;
+    background: transparent;
+    border: none;
+    color: #2c3e50;
+    
 }
 /********************************************************************** DEBUT NAV*************************************************************************/
 
@@ -852,4 +857,146 @@ iframe[src="https://www.youtube.com/embed/Gcqu2V5lBZo"] {
     padding: 100px;
     
 }
+
+
+/*********************************************LA PAGE position*************************************************/
+/* Position absolute  */
+
+.centre {
+    background: #33cccc;
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.absolute {
+    background: orange;
+    width: 100px;
+    height: 100px;
+    /* élément de position absolue est positionné par rapport à son ancètre  */
+    position: absolute;
+    left: 10%;
+    top: 24%;
+}
+ /* Position Relative  */
+.relative {
+    background: #2d5c7f;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    bottom: 10px;
+    left: 100px;
+}
+
+.relative div {
+    background: orange;
+    width: 50px;
+    height: 50px;
+    /* élément de position absolue est positionné par rapport à son parent  */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.trente {
+    width: 30%;
+    font-size: 22px;
+    background: #3c1b1f;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+}
+
+.cinquante {
+    width: 50%;
+    font-size: 22px;
+    background: #b2b2b2;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    margin-top: 7px;
+}
+
+.cent {
+    width: 100%;
+    font-size: 22px;
+    background: #3c1b1f;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    margin-top: 7px;
+}
+/* Le float  */
+.float {
+    height: 170px;
+    width: 170px;
+    background: #f8D771;
+    margin: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: #004445;
+    padding-top: 2px;
+    border: 2px solid darkred;
+    line-height: 170px;
+    float: left;
+}
+.dernier {
+    height: 170px;
+    width: 170px;
+    background: #f8D771;
+    margin: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: #004445;
+    padding-top: 2px;
+    border: 2px solid darkred;
+    line-height: 170px;
+    /* float: left; */
+}
+
+/* exercice sur le float  */
+
+.zone {
+    height: 70px;
+    background: orchid;
+
+}
+
+.zone1, .zone2, .zone3, .zone4 {
+    height: 250px;
+    border: 1px solid #e5e4cc;
+    width: 25%;
+    float: left;
+}
+.zone1, .zone3 {
+    background: #698474;
+}
+.zone2, .zone4 {
+    background: #bac7a7
+}
+
+/* Exercice sur le flex  */
+.flex {
+    /* /* display flex les éléments s'alignent dans le parent  */
+    display: flex;
+    /* les éléments occupent la largeur du parent avec un espace égal autour  */
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    flex-direction: row-reverse;
+    /* flex-direction: column-reverse; */
+}
+
+.flex div {
+    width: 150px;
+    height: 150px;
+    background: darkblue;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    line-height: 150px;
+}
+
+
+
+
 
