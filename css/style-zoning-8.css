@@ -1,6 +1,6 @@
 /* feuille de stule pour la page zoning 8  */
 
-
+/*************************************SOLUTION 1 SANS LA CLASS CLEAR******************************************************/
 body {
     background-color: thistle;
 }
@@ -11,6 +11,7 @@ body {
     height: 600px;
     margin: 0 auto;
     text-align: center;
+    color: white;
    
 }
 
@@ -38,10 +39,11 @@ header {
 }
 
 .zone1, .zone2, .zone3, .zone4, .zone5 {
+    /* avec .bas ces 5 éléments sont les enfants de milieu  */
     background: #758184;
     width: 100px;
     height: 500px;
-    line-height: 450px;
+    line-height: 500px;
     border: 1px solid black;
     box-sizing: border-box;
     float: left;
@@ -51,20 +53,24 @@ header {
     background-color: chocolate;
     height: 50px;
     line-height: 50px;
+    /* .bas est l'enfant de l'élément milieu et il a une position relartive à son parent  */
     position: relative;
     right: 0px;
+    /* .bas est positionné à 450px du haut de l'élément .milieu  */
     top: 450px;
     box-sizing: border-box;
         
 }
 
 .bas p {
+    /* le p est absolu par rapport à son parent .bas et non pas par rappot à l'encétre car .bas est relatif  */
     position: absolute;
     width: 500px;
-    height: 50px;
-    
-    
+    height: 50px; 
 }
 .clear {
     clear: both;
 }
+
+
+
