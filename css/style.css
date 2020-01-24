@@ -1061,6 +1061,21 @@ iframe[src="https://www.youtube.com/embed/Gcqu2V5lBZo"] {
     border-right: 6px solid transparent;
 }
 
+/* page animation suite effets sur les images  */
+
+.imgeffets {
+    width: 302px;
+    height: 320px;
+    margin: 70px auto;
+}
+
+.imgeffets li {
+
+    list-style: none;
+    width: 141px;
+    height: 150px;
+}
+
 
 
 
